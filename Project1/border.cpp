@@ -3,6 +3,8 @@
 #include <vector>
 #include <iostream>
 
+#include "split.h"
+
 using namespace std;
 
 vector<string>split(const string& s) {
@@ -111,7 +113,7 @@ vector<string>hcat(const vector<string>& left,
 		s += string(width1 - s.size(), ' ');
 
 		//오른쪽 문자 그림에서 행 하나를 복사
-		if (i != right.size()) {
+		if (j != right.size()) {
 			s += right[j++];
 		}
 
@@ -128,7 +130,7 @@ vector<string>hcat(const vector<string>& left,
   4. out.txt 파일에서 모든 출력 저장
 */
 
-
+/*
 int main() {
 	string s;
 	
@@ -138,3 +140,4 @@ int main() {
 	}
 	return 0;
 }
+*/
